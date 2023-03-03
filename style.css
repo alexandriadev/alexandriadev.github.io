@@ -1,0 +1,449 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Italic.woff2') format('woff2'),
+        url('../fonts/Montserrat-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ul, ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    font-size: 18px;
+}
+body {
+    font-family: 'Montserrat';
+    color: #1f1f1f;
+    background-color: #bfbebe;
+    font-size: 1.2rem;
+}
+
+input, button, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    border: none;
+}
+section {
+    position: relative;
+}
+
+.wrapper {
+    max-width: 1000px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.dark {
+    background-color: #a4a3a3;
+}
+
+
+.top-section {
+    background-color: #d9d9d9;
+    position: relative;
+    z-index: 2;
+}
+
+.title {
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-bottom: 1.5em;
+}
+.subtitle {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 1.5em;
+}
+
+.row-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+.row-field img {
+    display: block;
+    width: 1.3rem;
+    margin-right: .7rem;
+}
+.row-field__label {
+    display: inline-block;
+    font-size: 1.4rem;
+    min-width: 310px;
+    margin-right: 20px;
+}
+.row-field__inp {
+    padding: .4rem;
+    border: 1px solid #000;
+    width: 450px;
+    box-sizing: border-box;
+}
+
+.row-field-check__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.row-field-check__label {
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.row-field-check__label img {
+    display: block;
+    width: 1.3rem;
+    margin-right: .7rem;
+}
+.row-field-check__inp {
+    cursor: pointer;
+}
+.row-field-check__inp input:checked + span::after {
+    display: block;
+}
+.row-field-check__items {
+    padding-left: 2rem;
+}
+.row-field-check__inp span {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    background-color: #fff;
+    position: relative;
+}
+.row-field-check__inp span::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    background-color: #000;
+    display: none;
+}
+
+.main-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    z-index: -1;
+}
+.main-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.dark {
+    background-color: #a4a3a3;
+}
+
+.designed {
+    position: relative;
+}
+.designed-two::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-50%) rotate(180deg);
+    width: 94px;
+    height: 26px;
+    background-image: url('../img/section-design.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.designed::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-50%);
+    width: 94px;
+    height: 26px;
+    background-image: url('../img/section-design.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+section {
+    padding: 55px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.ask__title {
+    margin-bottom: 1.5rem;
+}
+.ask__descr {
+    font-size: .8rem;
+    margin-bottom: 1.6rem;
+}
+.ask__rows {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.ask__row {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.ask__row:not(:last-child) {
+    margin-bottom: 1.1rem;
+}
+.ask__row input:checked ~ .ask__sq::after, .ask__img input:checked ~ .ask__sq::after {
+    display: block;
+}
+.ask__sq {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    background-color: #fff;
+    position: relative;
+    margin-right: 15px;
+}
+.ask__sq::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    background-color: #000;
+    display: none;
+}
+
+.ask__inp {
+    display: none;
+}
+.ask__inp.active {
+    display: block;
+}
+
+.ask__imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 1rem;
+}
+.ask__img {
+    width: calc(100% / 12 * 4 - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ask__img_txt {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.ask__img_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1 / .5;
+    border-radius: 25px;
+    background-color: #0f7dbe;
+    margin-bottom: .8rem;
+}
+.ask__img_main img {
+    max-width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    object-fit: contain;
+    object-position: center;
+}
+.ask__img_sq {
+    margin-right: 0;
+}
+.ask__img_sqs {
+    display: flex;
+    align-items: center;
+}
+.ask__img_sqs .ask__img_sq {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+.ask__img_val {
+    display: inline-block;
+    margin-left: 10px;
+}
+.ask__img_sqs > .ask__img_sq:not(:last-child) {
+    margin-right: 25px;
+}
+
+.comment__title {
+    margin-bottom: 1.5rem;
+}
+.comment__text {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    box-sizing: border-box;
+    padding: .4rem;
+    border: 1px solid #000;
+    height: 250px;
+    margin-bottom: 1.5rem;
+}
+
+.comment__descr a {
+    white-space: nowrap;
+}
+.comment__descr {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.comment__descr span {
+    font-weight: 700
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.submit-btn:hover {
+    background-color: #dbdbdb;
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 14px;
+    }
+
+    .row-field__inp {
+        width: 300px;
+    }
+    .row-field__label {
+        font-size: 1.2rem;
+        min-width: 275px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .row-field__label {
+        min-width: 190px;
+        width: 190px;
+        margin-right: 15px;
+    }
+    .row-field__inp {
+        width: calc(100% - 236px);
+    }
+    .row-field-check__inp span {
+        width: 22px;
+        height: 22px;
+    }
+    .row-field-check__inp span::after {
+        width: 14px;
+        height: 14px;
+    }
+
+    .ask__sq {
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+    }
+    .ask__sq::after {
+        width: 14px;
+        height: 14px;
+    }
+
+    .ask__img_sq {
+        margin-right: 0;
+    }
+
+    .comment__text {
+        height: 150px;
+    }
+    .comment__descr {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ask__img {
+        width: calc(50% - 20px);
+    }
+
+    .row-field {
+        flex-wrap: wrap;
+    }
+    .row-field img {
+        width: 21px;
+        margin-right: 10px;
+    }
+    .row-field__label {
+        min-width: unset;
+        width: calc(100% - 31px);
+        margin-right: 0;
+    }
+    .row-field__inp {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

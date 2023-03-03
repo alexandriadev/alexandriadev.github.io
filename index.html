@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Опрос</title>
+
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+	<form method="post" action="send_email.php" enctype="multipart/form-data">
+		<section class="top-section">
+			<div class="wrapper">
+				<img src="./img/hero-bg.webp" alt="" class="main-bg" width="426" height="666">
+				<h1 class="title">Доброго времени суток. Просим Вас пройти небольшой опрос для более точного ориентира по стоимости работ и материалов.</h1>
+				<div class="row-field">
+					<img src="./img/field-arrow.png" alt="" width="21" height="21">
+					<label class="row-field__label">Как к вам обращаться?</label>
+					<input type="text" class="row-field__inp" placeholder="Роман">
+				</div>
+				<div class="row-field">
+					<img src="./img/field-arrow.png" alt="" width="21" height="21">
+					<label class="row-field__label">Адрес объекта?</label>
+					<input type="text" class="row-field__inp" placeholder="ул. Московская">
+				</div>
+				<div class="row-field">
+					<img src="./img/field-arrow.png" alt="" width="21" height="21">
+					<label class="row-field__label">Телефон</label>
+					<input type="text" class="row-field__inp" placeholder="+7 999 999 99 99">
+				</div>
+				<div class="row-field-check">
+					<p class="row-field-check__label">
+						<img src="./img/field-arrow.png" alt="" width="21" height="21">
+						Наличие проекта
+					</p>
+					<div class="row-field-check__items">
+						<div class="row-field-check__item">
+							<p class="row-field__label">Да</p>
+							<label class="row-field-check__inp">
+								<input type="radio" name="check-1" hidden checked>
+								<span></span>
+							</label>
+						</div>
+						<div class="row-field-check__item">
+							<p class="row-field__label">Нет</p>
+							<label class="row-field-check__inp">
+								<input type="radio" name="check-1" hidden>
+								<span></span>
+							</label>
+						</div>
+						<div class="row-field-check__item">
+							<p class="row-field__label">Другое</p>
+							<label class="row-field-check__inp">
+								<input type="radio" name="check-1" hidden>
+								<span></span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row-field">
+					<img src="./img/field-arrow.png" alt="" width="21" height="21">
+					<label class="row-field__label">Примерная дата начала работ?</label>
+					<input type="text" class="row-field__inp" placeholder="22.12.2023">
+				</div>
+
+				<img src="./img/main-img.webp" alt="" class="main-img" width="638" height="325">
+
+			</div>
+		</section>
+
+		<section class="designed dark">
+			<div class="wrapper">
+				<div class="ask">
+					<p class="ask__title">Количество санузлов?</p>
+					<div class="ask__rows">
+						<label class="ask__row">
+							<input type="radio" name="ask-1" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">1</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-1" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">2</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-1" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">3</span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="designed">
+			<div class="wrapper">
+				<div class="ask">
+					<p class="ask__title">Количество стояков холодной или горячей воды?</p>
+					<div class="ask__rows">
+						<label class="ask__row">
+							<input type="radio" name="ask-2" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">ванная</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-2" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">кухня</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-2" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">расположение стояка в коридоре общего холла</span>
+						</label>
+						<label class="ask__row ask__row-other">
+							<input type="radio" name="ask-2" value="show-inp" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">другое</span>
+						</label>
+						<div class="ask__row">
+							<input type="text" class="ask__inp row-field__inp">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="designed dark">
+			<div class="wrapper">
+				<div class="ask">
+					<div class="ask__imgs">
+						<label class="ask__img">
+							<input type="radio" name="ask-3-img" hidden>
+							<span class="ask__img_main">
+								<img src="./img/ask-img.webp" alt="" width="50" height="87">
+							</span>
+							<p class="ask__img_txt">описание</p>
+							<span class="ask__img_sq ask__sq"></span>
+						</label>
+						<label class="ask__img">
+							<input type="radio" name="ask-3-img" hidden>
+							<span class="ask__img_main">
+								<img src="./img/ask-img.webp" alt="" width="50" height="87">
+							</span>
+							<p class="ask__img_txt">описание</p>
+							<span class="ask__img_sq ask__sq"></span>
+						</label>
+						<label class="ask__img">
+							<input type="radio" name="ask-3-img" hidden>
+							<span class="ask__img_main">
+								<img src="./img/ask-img.webp" alt="" width="50" height="87">
+							</span>
+							<p class="ask__img_txt">описание</p>
+							<span class="ask__img_sq ask__sq"></span>
+						</label>
+					</div>
+
+					<p class="ask__title">Дополнительная шумоизоляция канализационных стояков:</p>
+					<div class="ask__rows">
+						<label class="ask__row">
+							<input type="radio" name="ask-3" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">шумоизоляция в 1 слой (виброизоляция СТП 2 мм) (-25% шума)</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-3" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">шумоизоляция в 2 слоя (виброизоляция СТП 4 мм) (-45% шума)</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-3" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">шумоизоляция на основе войлока (Техно-сонус) (-60-70% шума)</span>
+						</label>
+						<label class="ask__row ask__row-other">
+							<input type="radio" name="ask-3" value="show-inp" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">другое</span>
+						</label>
+						<div class="ask__row">
+							<input type="text" class="ask__inp row-field__inp">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="designed">
+			<div class="wrapper">
+				<div class="ask">
+					<p class="ask__title">Дополнительное оборудование:</p>
+					<div class="ask__rows">
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">ванная</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">душевой уголок</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">унитаз напольный</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">унитаз подвесной (инсталяция)</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">сушильная машина (если с водой)</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">посудомоечная машина</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">гигиенический душ в туалете</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">биде</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">водонагреватель</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">вывод воды на холодильник с льдогенератором</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">вывод воды на аквариум</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">выводы для кофемашины (современные для умного дома)</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">вывод воды на духовой шкаф</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">полотенцесушитель водяной</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">раковина в ванной</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">раковина в туалете</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">раковина на кухне</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">раковина в ванной</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-4" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">выводы для питьевого фильтра на кухне</span>
+						</label>
+						<label class="ask__row ask__row-other">
+							<input type="radio" name="ask-4" value="show-inp" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">другое</span>
+						</label>
+						<div class="ask__row">
+							<input type="text" class="ask__inp row-field__inp">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="designed dark">
+			<div class="wrapper">
+				<div class="ask">
+					<p class="ask__title">Какой вид сифона предпочитаете установить?</p>
+					<div class="ask__imgs">
+						<label class="ask__img">
+							<input type="radio" name="ask-5-img" hidden>
+							<span class="ask__img_main">
+								<img src="./img/ask-img.webp" alt="" width="50" height="87">
+							</span>
+							<p class="ask__img_txt">хромированный</p>
+							<span class="ask__img_sq ask__sq"></span>
+						</label>
+						<label class="ask__img">
+							<input type="radio" name="ask-5-img" hidden>
+							<span class="ask__img_main">
+								<img src="./img/ask-img.webp" alt="" width="50" height="87">
+							</span>
+							<p class="ask__img_txt">пластиковый</p>
+							<span class="ask__img_sq ask__sq"></span>
+						</label>
+						<label class="ask__img">
+							<input type="radio" name="ask-5-img" hidden>
+							<span class="ask__img_main">
+								<img src="./img/ask-img.webp" alt="" width="50" height="87">
+							</span>
+							<p class="ask__img_txt">другое</p>
+							<span class="ask__img_sq ask__sq"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="designed">
+			<div class="wrapper">
+				<div class="ask">
+					<p class="ask__title">Требуется установка душевого трапа?</p>
+					<div class="ask__img">
+						<span class="ask__img_main">
+							<img src="./img/ask-img.webp" alt="" width="50" height="87">
+						</span>
+						<div class="ask__img_sqs">
+							<label class="ask__img_sq">
+								<input type="radio" name="ask-6-img" hidden>
+								<span class="ask__img_sq ask__sq"></span>
+								<span class="ask__img_val">да</span>
+							</label>
+							<label class="ask__img_sq">
+								<input type="radio" name="ask-6-img" hidden>
+								<span class="ask__img_sq ask__sq"></span>
+								<span class="ask__img_val">нет</span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="designed dark">
+			<div class="wrapper">
+				<div class="ask">
+					<p class="ask__title">Выберите сантехнику, которую планируете установить в ванной:</p>
+					<div class="ask__imgs">
+						<label class="ask__img">
+							<input type="radio" name="ask-7-img" hidden>
+							<span class="ask__img_main">
+								<img src="./img/ask-img.webp" alt="" width="50" height="87">
+							</span>
+							<p class="ask__img_txt">стандартный кран внешний</p>
+							<span class="ask__img_sq ask__sq"></span>
+						</label>
+						<label class="ask__img">
+							<input type="radio" name="ask-7-img" hidden>
+							<span class="ask__img_main">
+								<img src="./img/ask-img.webp" alt="" width="50" height="87">
+							</span>
+							<p class="ask__img_txt">встроенный в стену блок смесителя</p>
+							<span class="ask__img_sq ask__sq"></span>
+						</label>
+						<label class="ask__img">
+							<input type="radio" name="ask-7-img" hidden>
+							<span class="ask__img_main">
+								<img src="./img/ask-img.webp" alt="" width="50" height="87">
+							</span>
+							<p class="ask__img_txt">наружный блок с авторегулировкой температуры</p>
+							<span class="ask__img_sq ask__sq"></span>
+						</label>
+						<label class="ask__img">
+							<input type="radio" name="ask-7-img" hidden>
+							<span class="ask__img_main">
+								<img src="./img/ask-img.webp" alt="" width="50" height="87">
+							</span>
+							<p class="ask__img_txt">встроенный блок с тропическим душем</p>
+							<span class="ask__img_sq ask__sq"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="designed">
+			<div class="wrapper">
+				<div class="ask">
+					<p class="ask__title">Какой вид смесителей предпочитаете?</p>
+					<div class="ask__imgs">
+						<label class="ask__img">
+							<input type="radio" name="ask-8-img" hidden>
+							<span class="ask__img_main">
+								<img src="./img/ask-img.webp" alt="" width="50" height="87">
+							</span>
+							<p class="ask__img_txt">первый</p>
+							<span class="ask__img_sq ask__sq"></span>
+						</label>
+						<label class="ask__img">
+							<input type="radio" name="ask-8-img" hidden>
+							<span class="ask__img_main">
+								<img src="./img/ask-img.webp" alt="" width="50" height="87">
+							</span>
+							<p class="ask__img_txt">второй</p>
+							<span class="ask__img_sq ask__sq"></span>
+						</label>
+						<label class="ask__img">
+							<input type="radio" name="ask-8-img" hidden>
+							<span class="ask__img_main">
+								<img src="./img/ask-img.webp" alt="" width="50" height="87">
+							</span>
+							<p class="ask__img_txt">третий</p>
+							<span class="ask__img_sq ask__sq"></span>
+						</label>
+						<label class="ask__img">
+							<input type="radio" name="ask-8-img" hidden>
+							<span class="ask__img_main">
+								<img src="./img/ask-img.webp" alt="" width="50" height="87">
+							</span>
+							<p class="ask__img_txt">другое</p>
+							<span class="ask__img_sq ask__sq"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="designed dark">
+			<div class="wrapper">
+				<div class="ask">
+					<p class="ask__title">Требуется вакуумный клапан для канализации?</p>
+					<p class="ask__descr">(Защита от запаха, когда забит общий стояк или соседи начудили с ремонтом)</p>
+					<div class="ask__img">
+						<span class="ask__img_main">
+							<img src="./img/ask-img.webp" alt="" width="50" height="87">
+						</span>
+						<div class="ask__img_sqs">
+							<label class="ask__img_sq">
+								<input type="radio" name="ask-9-img" hidden>
+								<span class="ask__img_sq ask__sq"></span>
+								<span class="ask__img_val">да</span>
+							</label>
+							<label class="ask__img_sq">
+								<input type="radio" name="ask-9-img" hidden>
+								<span class="ask__img_sq ask__sq"></span>
+								<span class="ask__img_val">нет</span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="designed">
+			<div class="wrapper">
+				<div class="ask">
+					<p class="ask__title">Требуется установка компенсатора гидро-ударов?</p>
+					<p class="ask__descr">(Предназначен для предотвращения повреждений внутренних систем водоснабжения от гидроударов)</p>
+					<div class="ask__img">
+						<span class="ask__img_main">
+							<img src="./img/ask-img.webp" alt="" width="50" height="87">
+						</span>
+						<div class="ask__img_sqs">
+							<label class="ask__img_sq">
+								<input type="radio" name="ask-10-img" hidden>
+								<span class="ask__img_sq ask__sq"></span>
+								<span class="ask__img_val">да</span>
+							</label>
+							<label class="ask__img_sq">
+								<input type="radio" name="ask-10-img" hidden>
+								<span class="ask__img_sq ask__sq"></span>
+								<span class="ask__img_val">нет</span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="designed dark">
+			<div class="wrapper">
+				<div class="ask">
+					<p class="ask__title">Планируется установка адаптера для слива?</p>
+					<p class="ask__descr">(с кондиционера, фильтров очистки, водонагревателя)</p>
+					<div class="ask__img">
+						<span class="ask__img_main">
+							<img src="./img/ask-img.webp" alt="" width="50" height="87">
+						</span>
+						<div class="ask__img_sqs">
+							<label class="ask__img_sq">
+								<input type="radio" name="ask-11-img" hidden>
+								<span class="ask__img_sq ask__sq"></span>
+								<span class="ask__img_val">да</span>
+							</label>
+							<label class="ask__img_sq">
+								<input type="radio" name="ask-11-img" hidden>
+								<span class="ask__img_sq ask__sq"></span>
+								<span class="ask__img_val">нет</span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="designed designed-two">
+			<div class="wrapper">
+				<div class="ask">
+					<p class="subtitle">ОТОПЛЕНИЕ</p>
+					<p class="ask__title">Требуется фильтр тонкой очистки с регулятором давления?</p>
+					<div class="ask__rows">
+						<label class="ask__row">
+							<input type="radio" name="ask-12" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">да</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-12" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">нет</span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="designed dark">
+			<div class="wrapper">
+				<div class="ask">
+					<p class="ask__title">Необходим монтаж системы отопления?</p>
+					<div class="ask__rows">
+						<label class="ask__row">
+							<input type="radio" name="ask-13" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">да</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-13" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">нет</span>
+						</label>
+						<label class="ask__row ask__row-other">
+							<input type="radio" name="ask-13" value="show-inp" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">другое</span>
+						</label>
+						<div class="ask__row">
+							<input type="text" class="ask__inp row-field__inp">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="designed">
+			<div class="wrapper">
+				<div class="ask">
+					<p class="ask__title">Количество радиаторов?</p>
+					<div class="ask__rows">
+						<label class="ask__row">
+							<input type="radio" name="ask-14" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">2</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-14" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">3</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-14" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">3</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-14" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">4</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-14" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">5</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-14" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">6</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-14" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">7</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-14" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">8</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-14" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">9</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-14" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">10</span>
+						</label>
+						<label class="ask__row ask__row-other">
+							<input type="radio" name="ask-14" value="show-inp" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">другое</span>
+						</label>
+						<div class="ask__row">
+							<input type="text" class="ask__inp row-field__inp">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="designed dark">
+			<div class="wrapper">
+				<div class="ask">
+					<p class="ask__title">Шкаф отопления?</p>
+					<p class="ask__descr">(ответ обязателен при прокладке пластиковых труб по полу)</p>
+					<div class="ask__rows">
+						<label class="ask__row">
+							<input type="radio" name="ask-15" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">накладной</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-15" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">внутренний</span>
+						</label>
+						<label class="ask__row">
+							<input type="radio" name="ask-15" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">монтаж в сантехническую нишу</span>
+						</label>
+						<label class="ask__row ask__row-other">
+							<input type="radio" name="ask-15" value="show-inp" hidden>
+							<span class="ask__sq"></span>
+							<span class="ask__txt">другое</span>
+						</label>
+						<div class="ask__row">
+							<input type="text" class="ask__inp row-field__inp">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="designed">
+			<div class="wrapper">
+				<div class="comment">
+					<p class="comment__title">Ваш комментарий:</p>
+					<textarea class="comment__text"></textarea>
+					<button class="submit-btn" type="submit">Отправить</button>
+					<p class="comment__descr">
+						<span>Спасибо что прошли опрос.</span> Проекты, фото и другую информацию 
+						по объекту просим направлять на Whatsap по номеру <a href="#">+7 915 145-98-55</a>
+						или на эл.почту <a href="#">79151459855@ya.ru</a>
+					</p>
+				</div>
+			</div>
+		</section>
+	</form>
+
+
+	<script>
+		const askSections = document.querySelectorAll('.ask__rows');
+
+		askSections.forEach(askSection => {
+			askSection.querySelectorAll('.ask__row').forEach(row => {
+				row.querySelector('input').addEventListener('change', function(){
+					const askInp = askSection.querySelector('.ask__inp');
+					console.log(row);
+					if (row.classList.contains('ask__row-other')) {
+						console.log('asd');
+						askInp.classList.add('active');
+					} else {
+						askInp.classList.remove('active');
+					}
+				});
+			});
+		});
+	</script>
+
+</body>
+</html>
